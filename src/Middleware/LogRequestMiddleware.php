@@ -11,7 +11,6 @@ class LogRequestMiddleware
     public function handle(Request $request, Closure $next)
     {
         Log::info('Requisição recebida', [
-            'ip' => $request->ip(),
             'url' => $request->fullUrl(),
             'metodo' => $request->method(),
             'dados' => $request->all(),

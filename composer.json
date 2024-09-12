@@ -1,0 +1,27 @@
+{
+  "name": "request-log/log-request-package",
+  "description": "Pacote para armazenar no log informações das requisições HTTP antes dela entrar na rota",
+  "type": "library",
+  "authors": [
+      {
+          "name": "Matheus F. de A. Soares",
+          "email": "matheusfasoares@gmail.com"
+      }
+  ],
+  "autoload": {
+      "psr-4": {
+          "RequestLog\\LogRequestPackage\\": "src/"
+      }
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "RequestLog\\LogRequestPackage\\LogRequestServiceProvider"
+          ]
+      }
+  },
+  "require": {
+      "php": ">=7.4",
+      "illuminate/support": "^8.0|^9.0|^10.0"
+  }
+}

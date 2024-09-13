@@ -4,7 +4,7 @@ namespace RequestLog\LogRequestPackage;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
-use YourVendor\LogRequestPackage\Middleware\LogRequestMiddleware;
+use RequestLog\LogRequestPackage\Middleware\LogRequestMiddleware;
 
 class LogRequestServiceProvider extends ServiceProvider
 {

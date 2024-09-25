@@ -14,7 +14,7 @@ class LogRequestMiddleware
             'url' => $request->fullUrl(),
             'metodo' => $request->method(),
             'dados' => $request->all(),
-            'cabecalhos' => $request->headers->all()->except('cookie'),
+            'cabecalhos' => $request->headers->all(),
         ]);
 
         return $next($request);
